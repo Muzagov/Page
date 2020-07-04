@@ -26,6 +26,9 @@ export class AppComponent {
 
   title = 'Page';
 
+  prefix: any;
+  pathToAssets = 'http://cdn.ramman.net/flexy-view/islam/visit/1.01/assets/';
+
   constructor(private service: StoreTestService) {
   }
 }

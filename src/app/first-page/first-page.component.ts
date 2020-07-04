@@ -28,6 +28,9 @@ export class FirstPageComponent implements OnInit {
     return this.service.forInput
   }
 
+  prefix: any;
+  pathToAssets = 'http://cdn.ramman.net/flexy-view/islam/visit/1.01/assets/';
+
   constructor(private service: StoreTestService) { }
 
   ngOnInit(): void {

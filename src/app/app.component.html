@@ -1,4 +1,12 @@
-<s-welcome [forWelcome]='forWelcome()'></s-welcome>
-<s-header [forHeader]='forHeader()'></s-header>
+<cnt-flexy-view-islam-visit-welcome-1-0-0 [payload]='forWelcome()'
+                                          [pathToAssets]='pathToAssets'>
+</cnt-flexy-view-islam-visit-welcome-1-0-0>
+<cnt-flexy-view-islam-visit-header-1-0-0 [categories]='forHeader()'
+                                         [pathToAssets]='pathToAssets'>
+</cnt-flexy-view-islam-visit-header-1-0-0>
+
 <router-outlet></router-outlet>
-<s-footer [forFooter]='forFooter()'></s-footer>
+
+<cnt-flexy-view-islam-visit-footer-1-0-0 [categories]='forFooter()'
+                                         [pathToAssets]='pathToAssets'>
+</cnt-flexy-view-islam-visit-footer-1-0-0>

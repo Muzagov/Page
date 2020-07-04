@@ -85,56 +85,6 @@ export namespace Components {
     }
     interface MyComponent {
     }
-    interface SCreate {
-        "forCreate": any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro": SCreate[];
-    }
-    interface SFooter {
-        "forFooter": any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro": SFooter[];
-    }
-    interface SHeader {
-        "forHeader": any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro": SHeader[];
-    }
-    interface SInput {
-        "forInput": any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro": SInput[];
-    }
-    interface STell {
-        "forTell": any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro": STell[];
-    }
-    interface SWelcome {
-        "forWelcome": any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro": SWelcome[];
-    }
-    interface SWrapper {
-        "forCarousel": any;
-        "forWrapper": any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro": SWrapper[];
-    }
 }
 declare global {
     interface HTMLCntFlexyViewIslamVisitCreateElement extends Components.CntFlexyViewIslamVisitCreate, HTMLStencilElement {
@@ -227,48 +177,6 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
-    interface HTMLSCreateElement extends Components.SCreate, HTMLStencilElement {
-    }
-    var HTMLSCreateElement: {
-        prototype: HTMLSCreateElement;
-        new (): HTMLSCreateElement;
-    };
-    interface HTMLSFooterElement extends Components.SFooter, HTMLStencilElement {
-    }
-    var HTMLSFooterElement: {
-        prototype: HTMLSFooterElement;
-        new (): HTMLSFooterElement;
-    };
-    interface HTMLSHeaderElement extends Components.SHeader, HTMLStencilElement {
-    }
-    var HTMLSHeaderElement: {
-        prototype: HTMLSHeaderElement;
-        new (): HTMLSHeaderElement;
-    };
-    interface HTMLSInputElement extends Components.SInput, HTMLStencilElement {
-    }
-    var HTMLSInputElement: {
-        prototype: HTMLSInputElement;
-        new (): HTMLSInputElement;
-    };
-    interface HTMLSTellElement extends Components.STell, HTMLStencilElement {
-    }
-    var HTMLSTellElement: {
-        prototype: HTMLSTellElement;
-        new (): HTMLSTellElement;
-    };
-    interface HTMLSWelcomeElement extends Components.SWelcome, HTMLStencilElement {
-    }
-    var HTMLSWelcomeElement: {
-        prototype: HTMLSWelcomeElement;
-        new (): HTMLSWelcomeElement;
-    };
-    interface HTMLSWrapperElement extends Components.SWrapper, HTMLStencilElement {
-    }
-    var HTMLSWrapperElement: {
-        prototype: HTMLSWrapperElement;
-        new (): HTMLSWrapperElement;
-    };
     interface HTMLElementTagNameMap {
         "cnt-flexy-view-islam-visit-create": HTMLCntFlexyViewIslamVisitCreateElement;
         "cnt-flexy-view-islam-visit-create-1-0-0": HTMLCntFlexyViewIslamVisitCreate100Element;
@@ -285,13 +193,6 @@ declare global {
         "cnt-flexy-view-islam-visit-wrapper": HTMLCntFlexyViewIslamVisitWrapperElement;
         "cnt-flexy-view-islam-visit-wrapper-1-0-0": HTMLCntFlexyViewIslamVisitWrapper100Element;
         "my-component": HTMLMyComponentElement;
-        "s-create": HTMLSCreateElement;
-        "s-footer": HTMLSFooterElement;
-        "s-header": HTMLSHeaderElement;
-        "s-input": HTMLSInputElement;
-        "s-tell": HTMLSTellElement;
-        "s-welcome": HTMLSWelcomeElement;
-        "s-wrapper": HTMLSWrapperElement;
     }
 }
 declare namespace LocalJSX {
@@ -514,196 +415,6 @@ declare namespace LocalJSX {
     }
     interface MyComponent {
     }
-    interface SCreate {
-        "forCreate"?: any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro"?: SCreate[];
-        /**
-          * Клик по картинке
-         */
-        "onClickCreateImage"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по позиционированной картинке
-         */
-        "onClickCreatePositionImage"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по второму subtext
-         */
-        "onClickCreateSecondSubText"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по второму тексту
-         */
-        "onClickCreateSecondText"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по subtext
-         */
-        "onClickCreateSubText"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по тексту
-         */
-        "onClickCreateText"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по третьему subtext
-         */
-        "onClickCreateThirdSubText"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по третьему тексту
-         */
-        "onClickCreateThirdText"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по title
-         */
-        "onClickCreateTitle"?: (event: CustomEvent<any>) => void;
-    }
-    interface SFooter {
-        "forFooter"?: any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro"?: SFooter[];
-        /**
-          * Клик по privacy
-         */
-        "onClickFooterPrivacy"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по subtext
-         */
-        "onClickFooterSubText"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по text
-         */
-        "onClickFooterSupport"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по text
-         */
-        "onClickFooterText"?: (event: CustomEvent<any>) => void;
-    }
-    interface SHeader {
-        "forHeader"?: any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro"?: SHeader[];
-        /**
-          * Клип по картинке
-         */
-        "onClickHeaderImage"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клип по slog in
-         */
-        "onClickHeaderLogIn"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клип по sign up
-         */
-        "onClickHeaderSignUp"?: (event: CustomEvent<any>) => void;
-    }
-    interface SInput {
-        "forInput"?: any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro"?: SInput[];
-        /**
-          * Клик по Input
-         */
-        "onClickInput"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по кнопке
-         */
-        "onClickInputButton"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по тексту
-         */
-        "onClickInputText"?: (event: CustomEvent<any>) => void;
-    }
-    interface STell {
-        "forTell"?: any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro"?: STell[];
-        /**
-          * Клик по AppImage
-         */
-        "onClickTellAppImage"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по GoogleImage
-         */
-        "onClickTellGoogleImage"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по subtext
-         */
-        "onClickTellSubText"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по тексту
-         */
-        "onClickTellText"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по title
-         */
-        "onClickTellTitle"?: (event: CustomEvent<any>) => void;
-    }
-    interface SWelcome {
-        "forWelcome"?: any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro"?: SWelcome[];
-        /**
-          * Клик по картинке
-         */
-        "onClickWelcomeImage"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по под тексту
-         */
-        "onClickWelcomeText"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по тексту
-         */
-        "onClickWelcomeTitle"?: (event: CustomEvent<any>) => void;
-    }
-    interface SWrapper {
-        "forCarousel"?: any;
-        "forWrapper"?: any;
-        /**
-          * Приём данных из массива для вывода
-         */
-        "intro"?: SWrapper[];
-        /**
-          * Клик по AppImage
-         */
-        "onClickWrapperAppImage"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по GoogleImage
-         */
-        "onClickWrapperGoogleImage"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по PhoneImage
-         */
-        "onClickWrapperPhoneImage"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по ProductImage
-         */
-        "onClickWrapperProductImage"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по subtext
-         */
-        "onClickWrapperSubText"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по subtitle
-         */
-        "onClickWrapperSubTitle"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по тексту
-         */
-        "onClickWrapperText"?: (event: CustomEvent<any>) => void;
-        /**
-          * Клик по title
-         */
-        "onClickWrapperTitle"?: (event: CustomEvent<any>) => void;
-    }
     interface IntrinsicElements {
         "cnt-flexy-view-islam-visit-create": CntFlexyViewIslamVisitCreate;
         "cnt-flexy-view-islam-visit-create-1-0-0": CntFlexyViewIslamVisitCreate100;
@@ -720,13 +431,6 @@ declare namespace LocalJSX {
         "cnt-flexy-view-islam-visit-wrapper": CntFlexyViewIslamVisitWrapper;
         "cnt-flexy-view-islam-visit-wrapper-1-0-0": CntFlexyViewIslamVisitWrapper100;
         "my-component": MyComponent;
-        "s-create": SCreate;
-        "s-footer": SFooter;
-        "s-header": SHeader;
-        "s-input": SInput;
-        "s-tell": STell;
-        "s-welcome": SWelcome;
-        "s-wrapper": SWrapper;
     }
 }
 export { LocalJSX as JSX };
@@ -748,13 +452,6 @@ declare module "@stencil/core" {
             "cnt-flexy-view-islam-visit-wrapper": LocalJSX.CntFlexyViewIslamVisitWrapper & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWrapperElement>;
             "cnt-flexy-view-islam-visit-wrapper-1-0-0": LocalJSX.CntFlexyViewIslamVisitWrapper100 & JSXBase.HTMLAttributes<HTMLCntFlexyViewIslamVisitWrapper100Element>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
-            "s-create": LocalJSX.SCreate & JSXBase.HTMLAttributes<HTMLSCreateElement>;
-            "s-footer": LocalJSX.SFooter & JSXBase.HTMLAttributes<HTMLSFooterElement>;
-            "s-header": LocalJSX.SHeader & JSXBase.HTMLAttributes<HTMLSHeaderElement>;
-            "s-input": LocalJSX.SInput & JSXBase.HTMLAttributes<HTMLSInputElement>;
-            "s-tell": LocalJSX.STell & JSXBase.HTMLAttributes<HTMLSTellElement>;
-            "s-welcome": LocalJSX.SWelcome & JSXBase.HTMLAttributes<HTMLSWelcomeElement>;
-            "s-wrapper": LocalJSX.SWrapper & JSXBase.HTMLAttributes<HTMLSWrapperElement>;
         }
     }
 }
