@@ -17,23 +17,10 @@
 
 | Event              | Description    | Type               |
 | ------------------ | -------------- | ------------------ |
-| `clickInput`       | Клип по Input  | `CustomEvent<any>` |
-| `clickInputButton` | Клип по кнопке | `CustomEvent<any>` |
-| `clickInputText`   | Клип по тексту | `CustomEvent<any>` |
+| `clickInput`       | Клик по Input  | `CustomEvent<any>` |
+| `clickInputButton` | Клик по кнопке | `CustomEvent<any>` |
+| `clickInputText`   | Клик по тексту | `CustomEvent<any>` |
 
-
-## Dependencies
-
-### Used by
-
- - [my-component](../my-component)
-
-### Graph
-```mermaid
-graph TD;
-  my-component --> s-input
-  style s-input fill:#f9f,stroke:#333,stroke-width:4px
-```
 
 ----------------------------------------------
 

@@ -24,19 +24,6 @@
 | `clickTellTitle`       | Клик по title       | `CustomEvent<any>` |
 
 
-## Dependencies
-
-### Used by
-
- - [my-component](../my-component)
-
-### Graph
-```mermaid
-graph TD;
-  my-component --> s-tell
-  style s-tell fill:#f9f,stroke:#333,stroke-width:4px
-```
-
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

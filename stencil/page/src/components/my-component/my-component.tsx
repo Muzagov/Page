@@ -18,55 +18,28 @@ import {
 })
 export class MyComponent {
   render() {
-    const clicker = item => {
-      console.log(item);
-    }
     return (
       <div>
-        <s-welcome forWelcome={forWelcome}
-                   onClickWelcomeImage={(item) => clicker(item)}
-                   onClickWelcomeTitle={(item) => clicker(item)}
-                   onClickWelcomeText={(item) => clicker(item)}/>
-        <s-header forHeader={forHeader}
-                  onClickHeaderImage={(item) => clicker(item)}
-                  onClickHeaderSignUp={(item) => clicker(item)}
-                  onClickHeaderLogIn={(item) => clicker(item)}/>
-        <s-wrapper forWrapper={forWrapper}
-                   onClickWrapperTitle={(item) => clicker(item)}
-                   onClickWrapperSubTitle={(item) => clicker(item)}
-                   onClickWrapperText={(item) => clicker(item)}
-                   onClickWrapperGoogleImage={(item) => clicker(item)}
-                   onClickWrapperAppImage={(item) => clicker(item)}
-                   onClickWrapperSubText={(item) => clicker(item)}
-                   onClickWrapperProductImage={(item) => clicker(item)}
-                   onClickWrapperPhoneImage={(item) => clicker(item)}
-                   forCarousel={forCarousel}/>
-        <s-create forCreate={forCreate}
-                  onClickCreateImage={(item) => clicker(item)}
-                  onClickCreatePositionImage={(item) => clicker(item)}
-                  onClickCreateTitle={(item) => clicker(item)}
-                  onClickCreateText={(item) => clicker(item)}
-                  onClickCreateSubText={(item) => clicker(item)}
-                  onClickCreateSecondText={(item) => clicker(item)}
-                  onClickCreateSecondSubText={(item) => clicker(item)}
-                  onClickCreateThirdText={(item) => clicker(item)}
-                  onClickCreateThirdSubText={(item) => clicker(item)}/>
-        <s-tell forTell={forTell}
-                onClickTellTitle={(item) => clicker(item)}
-                onClickTellText={(item) => clicker(item)}
-                onClickTellSubText={(item) => clicker(item)}
-                onClickTellAppImage={(item) => clicker(item)}
-                onClickTellGoogleImage={(item) => clicker(item)}/>
-        <s-input forInput={forInput}
-                 onClickInputButton={(item) => clicker(item)}
-                 onClickInput={(item) => clicker(item)}
-                 onClickInputText={(item) => clicker(item)}/>
-        <s-footer forFooter={forFooter}
-                  onClickFooterText={(item) => clicker(item)}
-                  onClickFooterPrivacy={(item) => clicker(item)}
-                  onСlickFooterSupport={(item) => clicker(item)}
-                  onСlickFooterSubText={(item) => clicker(item)}/>
+        <cnt-flexy-view-islam-visit-welcome-1-0-0 payload={forWelcome}
+                                                  pathToAssets={this.testPathToAssets}/>
+        <cnt-flexy-view-islam-visit-header-1-0-0 categories={forHeader}
+                                                 pathToAssets={this.testPathToAssets}/>
+        <cnt-flexy-view-islam-visit-wrapper-1-0-0 payload={forWrapper}
+                                                  forCarousel={forCarousel}
+                                                  pathToAssets={this.testPathToAssets}/>
+        <cnt-flexy-view-islam-visit-create-1-0-0 payload={forCreate}
+                                                 pathToAssets={this.testPathToAssets}/>
+        <cnt-flexy-view-islam-visit-tell-1-0-0 payload={forTell}
+                                               pathToAssets={this.testPathToAssets}/>
+        <cnt-flexy-view-islam-visit-input-1-0-0 payload={forInput}/>
+        <cnt-flexy-view-islam-visit-footer-1-0-0 categories={forFooter}/>
       </div>
     )
   }
+  /**
+   * временный префикс ссылки для картинок
+   */
+  public testPathToAssets =
+    "http://cdn.ramman.net/flexy-view/islam/visit/1.01/assets/";
 }
+
