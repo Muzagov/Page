@@ -9,7 +9,6 @@
 
 | Property       | Attribute        | Description | Type     | Default     |
 | -------------- | ---------------- | ----------- | -------- | ----------- |
-| `forCarousel`  | `for-carousel`   |             | `any`    | `undefined` |
 | `pathToAssets` | `path-to-assets` |             | `string` | `undefined` |
 | `payload`      | `payload`        |             | `any`    | `undefined` |
 

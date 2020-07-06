@@ -12,10 +12,6 @@ export class FirstPageComponent implements OnInit {
     return this.service.forWrapper
   }
 
-  forCarousel() {
-    return this.service.forCarousel
-  }
-
   forCreate() {
     return this.service.forCreate
   }

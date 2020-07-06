@@ -57,6 +57,41 @@ export class CntFlexyViewIslamVisitWrapper implements ComponentInterface {
    */
   @Event() clickWrapperPhoneImage: EventEmitter;
 
+  /**
+   * Клик по картинке карусели
+   */
+  @Event() clickWrapperImage1: EventEmitter;
+
+  /**
+   * Клик по картинке карусели
+   */
+  @Event() clickWrapperImage2: EventEmitter;
+
+  /**
+   * Клик по картинке карусели
+   */
+  @Event() clickWrapperImage3: EventEmitter;
+
+  /**
+   * Клик по картинке карусели
+   */
+  @Event() clickWrapperImage4: EventEmitter;
+
+  /**
+   * Клик по картинке карусели
+   */
+  @Event() clickWrapperImage5: EventEmitter;
+
+  /**
+   * Клик по картинке карусели
+   */
+  @Event() clickWrapperImage6: EventEmitter;
+
+  /**
+   * Клик по картинке карусели
+   */
+  @Event() clickWrapperImage7: EventEmitter;
+
   componentDidRender() {
     // @ts-ignore
     AOS.init();
@@ -84,20 +119,6 @@ export class CntFlexyViewIslamVisitWrapper implements ComponentInterface {
 
 
   render() {
-
-    const getCarousel = this.forCarousel.map((item) => {
-      return (
-        <div class="carousel-c">
-              <div class="carousel-cell"
-                   style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image + ")" }}>
-              </div>
-                <div class="name">
-                  {item.name}
-                </div>
-                </div>
-      )
-    });
-
     const getWrapper = this.payload.map((item) => {
       return (
         <div class="row d-flex">
@@ -118,7 +139,62 @@ export class CntFlexyViewIslamVisitWrapper implements ComponentInterface {
               <div class="col-12">
                 <div class="main-carousel" data-flickity='{ "cellAlign": "right", "contain": true }'>
                   <div class="carousel" data-flickity='{ "autoPlay": true }'>
-                    {getCarousel}
+                    <div class="carousel-c">
+                    <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image1 + ")" }}
+                         onClick={() => this.clickWrapperImage1.emit('WrapperImage1')}>{item.image1}>
+                    </div>
+                      <div class="name">
+                        {item.name1}
+                      </div>
+                    </div>
+                    <div class="carousel-c">
+                      <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image2 + ")" }}
+                           onClick={() => this.clickWrapperImage2.emit('WrapperImage2')}>{item.image2}>
+                      </div>
+                      <div class="name">
+                        {item.name2}
+                      </div>
+                    </div>
+                    <div class="carousel">
+                      <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image3 + ")" }}
+                           onClick={() => this.clickWrapperImage3.emit('WrapperImage3')}>{item.image3}>
+                      </div>
+                      <div class="name">
+                        {item.name3}
+                      </div>
+                    </div>
+                   <div class="carousel">
+                     <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image4 + ")" }}
+                          onClick={() => this.clickWrapperImage4.emit('WrapperImage5')}>{item.image4}>
+                     </div>
+                     <div class="name">
+                       {item.name4}
+                     </div>
+                   </div>
+                    <div class="carousel">
+                      <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image5 + ")" }}
+                           onClick={() => this.clickWrapperImage5.emit('WrapperImage5')}>{item.image5}>
+                      </div>
+                      <div class="name">
+                        {item.name5}
+                      </div>
+                    </div>
+                   <div class="carousel">
+                     <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image6 + ")" }}
+                          onClick={() => this.clickWrapperImage6.emit('WrapperImage6')}>{item.image6}>
+                     </div>
+                     <div class="name">
+                       {item.name6}
+                     </div>
+                   </div>
+                    <div class="carousel">
+                      <div class="carousel-cell" style={{ backgroundImage: "url(" + StorageIslamVisit.prefix + item.image7 + ")" }}
+                           onClick={() => this.clickWrapperImage7.emit('WrapperImage7')}>{item.image7}>
+                      </div>
+                      <div class="name">
+                        {item.name7}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
